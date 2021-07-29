@@ -6,7 +6,8 @@ import s from './FilterContacts.module.css';
 const FilterContact = ({ value, onChange }) => {
   return (
     <>
-      <label className={s.label}>Find contacts by name
+      <label className={s.label}>
+        Find contacts by name
         <input
           placeholder="type name"
           className={s.input}
@@ -15,7 +16,8 @@ const FilterContact = ({ value, onChange }) => {
           title="Search contacts"
           value={value}
           onChange={onChange}
-      /></label>
+        />
+      </label>
     </>
   );
 };
